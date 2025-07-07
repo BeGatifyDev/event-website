@@ -1,0 +1,244 @@
+/* assets/css/style.css */
+
+/**
+ * Event Registration Plugin - Main CSS
+ * Author: Oluwafemi Oluwatobi Best
+ * Description: Styles the frontend and backend forms, tables, and buttons with a professional, clean, and modern color palette + animations.
+ */
+
+/* General resets */
+.er-container * {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.er-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9fb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Headings */
+.er-container h1,
+.er-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Forms */
+.er-container form input[type="text"],
+.er-container form input[type="email"],
+.er-container form input[type="date"],
+.er-container form input[type="time"],
+.er-container form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.er-container form button,
+.er-container form input[type="submit"] {
+    background-color: #0073aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.er-container form button:hover,
+.er-container form input[type="submit"]:hover {
+    background-color: #005177;
+}
+
+/* Table */
+.er-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.er-container table th,
+.er-container table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.er-container table th {
+    background-color: #0073aa;
+    color: #fff;
+}
+
+.er-container table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Buttons */
+.er-container .er-delete-button {
+    background-color: #d63638;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.er-container .er-delete-button:hover {
+    background-color: #a62628;
+}
+
+/* Success and error messages */
+.er-success {
+    padding: 10px;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.er-error {
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Event Registration Frontend Form Styles - Animated Premium Design */
+
+.er-registration-form {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background: linear-gradient(145deg, #ffffff, #f3f6f9);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.er-registration-form::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, #3498db, #8e44ad, #3498db);
+    background-size: 200% 200%;
+    z-index: -1;
+    animation: gradientMove 10s ease infinite;
+    opacity: 0.05;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.er-registration-form h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    animation: slideDown 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.er-registration-form form p {
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.er-registration-form form p:nth-child(1) { animation-delay: 0.4s; }
+.er-registration-form form p:nth-child(2) { animation-delay: 0.6s; }
+.er-registration-form form p:nth-child(3) { animation-delay: 0.8s; }
+.er-registration-form form p:nth-child(4) { animation-delay: 1s; }
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.er-registration-form label {
+    display: block;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+.er-registration-form input[type="text"],
+.er-registration-form input[type="email"],
+.er-registration-form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.er-registration-form input[type="text"]:focus,
+.er-registration-form input[type="email"]:focus,
+.er-registration-form select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52,152,219,0.2);
+    outline: none;
+}
+
+.er-registration-form input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(90deg, #3498db, #8e44ad);
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.er-registration-form input[type="submit"]:hover {
+    background: linear-gradient(90deg, #8e44ad, #3498db);
+    transform: translateY(-2px);
+}
+
+.er-registration-form input[type="submit"]:active {
+    transform: scale(0.98);
+}
