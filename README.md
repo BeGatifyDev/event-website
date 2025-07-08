@@ -19,8 +19,7 @@ This project is a **complete Event Website** with a responsive frontend design a
 2. Activate the theme or plugin via your WordPress dashboard.
 3. Customize settings in the WordPress editor to match your event details.
 
-## 🎥 **Demo**
-Watch the full **screen recorded demo walkthrough** [here](#).
+
 
 ## 💡 **Lessons Learned**
 - Building a WordPress plugin from scratch
@@ -32,10 +31,8 @@ Watch the full **screen recorded demo walkthrough** [here](#).
 Open to contributions and suggestions to improve functionalities or design.
 
 ## 📞 **Contact**
-Developed by **[Your Name]**  
+Developed by Oluwafemi Oluwatobi Best  
 [LinkedIn](https://www.linkedin.com/in/bestbassn/)
 
 ---
 
-### 🔖 **License**
-This project is for educational and portfolio demonstration purposes.
